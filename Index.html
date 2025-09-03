@@ -2,72 +2,574 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agu Joan | Frontend Developer</title>
-    <link rel="shortcut icon" href="/Favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Serif+Display:ital@0;1&family=Marcellus&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:wght@400..900&family=Quicksand:wght@300..700&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agu Joan | Front-end Developer </title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/Favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
 </head>
 
 <body>
+  <!-- custom cursor  -->
+  <div class="cursor-follower"></div>
+  <!-- Navbar  -->
+  <div class=" cursor"></div>
+  <div class="cursor-heart"></div>
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="logo">A.J.</a>
+      <!-- hamburger  -->
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- navlinks  -->
+      <ul class="nav-links" id="nav-links">
+        <li>
+          <a href="#home" class="active">Home</a>
+        </li>
+        <li>
+          <a href="#tech-stack">Tech Stack</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#resume">Resume</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <header>
-        <nav class="navbar">
-            <a href="#" class="nav-branding"> A . J </a>
+  <!-- hero section  -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1 class="hero-name">Joan Agu</h1>
+        <p class="hero-tagline">FrontEnd Developer | Code Crafter | Clean Responsive Code</p>
+        <p class="hero-intro">Turning Ideas Into Interactive Web Realities</p>
 
-            <ul class="nav-menu">
-                <li class="nav-item"></li>
-                <a href="#home" class="nav-link active">Home</a>
+        <div class="hero-cta">
+          <a href="#resume" class="btn btn-primary">View Resume</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
 
-                <li class="nav-item"></li>
-                <a href="#ourFeat" class="nav-link">Tech Stack</a>
+      <div class="hero-image">
+        <div class="profile-img">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="skinTone" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fce8dd" />
+                <stop offset="100%" stop-color="#f7d6c4" />
+              </linearGradient>
+            </defs>
 
-                <li class="nav-item"></li>
-                <a href="#gallery" class="nav-link">Projects</a>
+            <!-- Background -->
+            <circle cx="100" cy="100" r="100" fill="#AEC3B0" />
 
-                <li class="nav-item"></li>
-                <a href="#test" class="nav-link">Resume</a>
+            <!-- Hair (Long & Soft) -->
+            <path d="M50,50 
+           Q20,100 60,160 
+           Q100,190 140,160 
+           Q180,100 150,50 
+           Q130,30 100,40 
+           Q70,30 50,50 Z" fill="#000000" />
 
-                <li class="nav-item"></li>
-                <a href="#test" class="nav-link">About</a>
+            <!-- Face -->
+            <circle cx="100" cy="90" r="40" fill="url(#skinTone)" />
 
-                <li class="nav-item"></li>
-                <a href="#test" class="nav-link">Contact</a>
+            <!-- Brows -->
+            <path d="M75,85 Q82,80 89,85" stroke="#000" stroke-width="2" fill="none" />
+            <path d="M111,85 Q118,80 125,85" stroke="#000" stroke-width="2" fill="none" />
 
-            </ul>
+            <!-- Eyes -->
+            <circle cx="82" cy="92" r="4" fill="#000" />
+            <circle cx="118" cy="92" r="4" fill="#000" />
 
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <!-- Smile -->
+            <path d="M85,110 Q100,120 115,110" stroke="#cc4c4c" stroke-width="2" fill="none" />
 
+            <!-- Neck -->
+            <rect x="94" y="125" width="12" height="10" fill="#fce8dd" />
+
+            <!-- Blouse -->
+            <path d="M70,130 Q100,150 130,130 L140,160 H60 L70,130 Z" fill="#f7a6b1" />
+
+            <!-- Laptop -->
+            <rect x="50" y="145" width="100" height="40" rx="6" fill="#ffffff" stroke="#ccc" stroke-width="1.5" />
+            <rect x="60" y="150" width="80" height="20" rx="4" fill="#e0e0e0" />
+            <circle cx="100" cy="175" r="3" fill="#bbb" />
+
+            <!-- Code Icon on Screen -->
+            <text x="82" y="163" font-size="7" fill="#666" font-family="monospace">&lt;/&gt;</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="tech-stack" id="tech-stack">
+    <div class="container">
+      <h2 class="section-title">Tech Stack & Proficiency</h2>
+      <div class="stack-grid">
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-icon">
+              <i class="fab fa-html5"></i>
             </div>
-        </nav>
-    </header>
-
-    <!-- HOME SECTION  -->
-    <section class="hero" id="home">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1 class="hero-name">Agu Joan <br> <span>Chinecherm</span></h1>
-                <p class="hero-tagline">Front End Developer | UI Lover| Tech Enthusiast </p>
-                <p class="hero-intro">Creating beautiful and functional web designs</p>
-            </div>
+            <h3 class="stack-name">HTML</h3>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-width="95"></div>
+          </div>
+          <div class="progress-info">
+            <span class="progress-level">Advanced</span>
+            <span class="progress-percentage">95%</span>
+          </div>
         </div>
 
-        
-    </section>
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3 class="stack-name">CSS</h3>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-width="90"></div>
+          </div>
+          <div class="progress-info">
+            <span class="progress-level">Advanced</span>
+            <span class="progress-percentage">90%</span>
+          </div>
+        </div>
 
-    <script src="Script.js"></script>
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3 class="stack-name">JavaScript</h3>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-width="70"></div>
+          </div>
+          <div class="progress-info">
+            <span class="progress-level">intermediate</span>
+            <span class="progress-percentage">70%</span>
+          </div>
+        </div>
+
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3 class="stack-name">ReactJS</h3>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-width="70"></div>
+          </div>
+          <div class="progress-info">
+            <span class="progress-level">Intermediate</span>
+            <span class="progress-percentage">70%</span>
+          </div>
+        </div>
+
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-icon">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <h3 class="stack-name">Git & GitHub</h3>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-width="60"></div>
+          </div>
+          <div class="progress-info">
+            <span class="progress-level">intermediate</span>
+            <span class="progress-percentage">50%</span>
+          </div>
+        </div>
+
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="stack-name">MSSQL</h3>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-width="65"></div>
+          </div>
+          <div class="progress-info">
+            <span class="progress-level">Intermediate</span>
+            <span class="progress-percentage">65%</span>
+          </div>
+        </div>
+
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="stack-name">MongoDB</h3>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-width="60"></div>
+          </div>
+          <div class="progress-info">
+            <span class="progress-level">Intermediate</span>
+            <span class="progress-percentage">50%</span>
+          </div>
+        </div>
+
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-icon">
+              <i class="fas fa-file-word"></i>
+            </div>
+            <h3 class="stack-name">Microsoft Office</h3>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-width="85"></div>
+          </div>
+          <div class="progress-info">
+            <span class="progress-level">Advanced</span>
+            <span class="progress-percentage">85%</span>
+          </div>
+        </div>
+
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-icon">
+              <i class="fab fa-google"></i>
+            </div>
+            <h3 class="stack-name">Google Workspace</h3>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-width="85"></div>
+          </div>
+          <div class="progress-info">
+            <span class="progress-level">Intermediate</span>
+            <span class="progress-percentage">60%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="Opal.png" alt="Opal Glam">
+            <div class="project-overlay">
+              <a href="https://opal-glam.vercel.app/" class="project-link" target="_blank">
+                <i class="fas fa-link"></i>
+              </a>
+              </a>.
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Opal Glam</h3>
+            <p class="project-description">A Makeup and Cosmetic Website</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="Aure.png" alt="Aure Travels">
+            <div class="project-overlay">
+              <a href="https://lushnest.netlify.app/" class="project-link" target="_blank">
+                <i class="fas fa-link"></i>
+              </a>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Aure Travels</h3>
+            <p class="project-description">A Yatching Website</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="LH.png" alt="LH">
+            <div class="project-overlay">
+              <a href="https://tasterealm.netlify.app/" class="project-link" target="_blank">
+                <i class="fas fa-link"></i>
+              </a>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Learning Hub</h3>
+            <p class="project-description">A Learning Website</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section class="resume" id="resume">
+    <div class="container">
+      <h2 class="section-title">My Resume</h2>
+      <div class="resume-container">
+        <div class="resume-preview">
+          <div class="resume-section">
+            <h3 class="resume-section-title">Personal Projects</h3>
+            <div class="resume-item">
+              <h4 class="resume-item-title">Opal Glam</h4>
+              <p class="resume-item-subtitle">Makeup And Cosmetics</p>
+              <p class="resume-item-date">July 2025</p>
+              <p class="resume-item-description">Opal Glam is a frontend-only Makeup website built
+                with HTML, CSS, and JavaScript. It offers services and products focused on Makeup products.
+                This personal project displays an appealing ambiance and smooth
+                frontend functionality using only HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="resume-item">
+              <h4 class="resume-item-title">Aure Travels</h4>
+              <p class="resume-item-subtitle">Yatching Website</p>
+              <p class="resume-item-date">June 2025</p>
+              <p class="resume-item-description">Aure Travels is a Yatching Travel web apllication This personal project
+                emphasizes aesthetic visuals and smooth frontend
+                functionalityusing only HTML, CSS, JavaScript, and localStorage.</p>
+            </div>
+          </div>
+          <div class="resume-section">
+            <h3 class="resume-section-title">Education</h3>
+            <div class="resume-item">
+              <h4 class="resume-item-title">Diploma in Full-Stack Development of Software Engineering</h4>
+              <p class="resume-item-subtitle">National Institute of Information Technology (NIIT)</p>
+              <p class="resume-item-date">May 2024 - June 2026</p>
+              <p class="resume-item-description">Focusing on Full-Stack Development, Web Development, and
+                App Development</p>
+            </div>
+          </div>
+          <div class="resume-download">
+            <a href="AGU JOAN FRONT END DEVELOPER RESUME.pdf" class="btn btn-primary" id="downloadResumeBtn">Download
+              Full Resume</a>
+            <div class="resume-badge">
+              <i class="fas fa-clock"></i> Last Updated: August 2025
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Joan</h2>
+      <div class="about-container">
+        <div class="about-content">
+          <p class="about-text">
+            I’m Joan — a passionate and creative Frontend Engineer dedicated to building beautiful, responsive, and
+            user-friendly websites. I specialize in turning designs into interactive, pixel-perfect digital experiences
+            using HTML, CSS, JavaScript, and modern frameworks like React
+          </p>
+          <p class="about-text">
+            My approach to frontend development blends technical precision with a strong eye for design. I believe every
+            interface should not only function flawlessly but also feel intuitive and visually engaging. Whether I’m
+            creating a personal portfolio, a brand website, or a user dashboard, I focus on performance, accessibility,
+            and elegant UI
+          </p>
+          <p class="about-text">
+            Beyond the code, I love exploring the world of design trends, experimenting with animations, and
+            continuously learning new tools to stay ahead in this fast-paced tech space. For me, frontend development is
+            more than a career — it’s a creative outlet where logic meets beauty.
+          </p>
+
+          <p class="about-text">
+            Let’s build something beautiful, functional, and unforgettable.
+          </p>
+          <div class="philosophy-cards">
+            <div class="philosophy-card">
+              <h3 class="philosophy-title">
+                <i class="fas fa-paint-brush"></i>
+                Design First
+              </h3>
+              <p class="philosophy-text">
+                I believe in starting with a solid design foundation before diving into code.
+                Understanding the visual hierarchy and user flow is essential for creating effective
+                interfaces.
+              </p>
+            </div>
+            <div class="philosophy-card">
+              <h3 class="philosophy-title">
+                <i class="fas fa-mobile-alt"></i>
+                Mobile-First Approach
+              </h3>
+              <p class="philosophy-text">
+                With the increasing use of mobile devices, I prioritize mobile-first design to ensure
+                optimal user experience across all screen sizes.
+              </p>
+            </div>
+            <div class="philosophy-card">
+              <h3 class="philosophy-title">
+                <i class="fas fa-universal-access"></i>
+                Accessibility Matters
+              </h3>
+              <p class="philosophy-text">
+                I'm committed to creating websites that are accessible to all users, regardless of their
+                abilities or disabilities.
+              </p>
+            </div>
+            <div class="philosophy-card">
+              <h3 class="philosophy-title">
+                <i class="fas fa-code"></i>
+                Clean Code
+              </h3>
+              <p class="philosophy-text">
+                I strive to write clean, maintainable code that is easy to understand and build upon,
+                following best practices and industry standards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Talk</h2>
+      <div class="contact-container">
+        <div class="contact-form">
+          <form id="contactForm" action="https://formsubmit.co/agujoan86@gmail.com" method="POST">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-header">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3 class="info-title">Email</h3>
+            </div>
+            <p class="info-content">
+              <a href="mailto:agujaon86@gmail.com" id="email-text">agujoan86@gmail.com</a>
+              <button id="copy-email" class="tooltip text-gray-400 hover:text-[#e6c2bf] transition-colors">
+                <i class="far fa-copy" style="color: var(--primary);"></i>
+                <span class="tooltiptext" id="email-tooltip">Copy to clipboard</span>
+              </button>
+            </p>
+          </div>
+          <div class="info-card">
+            <div class="info-header">
+              <div class="info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <h3 class="info-title">Phone</h3>
+            </div>
+            <p class="info-content">
+              <span id="phone-text">+234 913 646 6679</span>
+              <button id="copy-phone" class="tooltip text-gray-400 hover:text-[#e6c2bf] transition-colors">
+                <i class="far fa-copy" style="color: var(--primary);"></i>
+                <span class="tooltiptext" id="phone-tooltip">Copy to clipboard</span>
+              </button>
+            </p>
+          </div>
+          <div class="info-card">
+            <div class="info-header">
+              <div class="info-icon">
+                <i class="fas fa-share-alt"></i>
+              </div>
+              <h3 class="info-title">Social Media</h3>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/JOAN3232" class="social-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/joan-agu-72610a361/" class="social-link" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.instagram.com/joan8_6/" class="social-link" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/2349136466679" class="social-link" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Agu Joan</div>
+        <p class="footer-text">Frontend Developer creating beautiful web experiences</p>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#tech-stack" class="footer-link">Tech Stack</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#resume" class="footer-link">Resume</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+        <p class="footer-copyright">&copy; 2025 Agu Joan. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#home" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'960d12aec4d1d7e3',t:'MTc1Mjc5MDI2NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script> -->
+  <script src="/Script.js"></script>
 </body>
 
 </html>
-
-<!-- #A1D0DA  -->
-<!-- "Lato", sans-serif -->
